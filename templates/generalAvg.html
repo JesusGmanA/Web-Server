@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>General average</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #84e2e9e8;">
+    <a href="/dashboard" class="navbar-brand">
+        <img src="/static/img/udg.png" alt="logo" width="40" height="50" style="padding-right: 4pt;">Web server on Golang
+    </a>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/dashboard">Dashboard <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/createScore">Add new class grade <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/studentAvg">Average for a student</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/generalAvg">Average across all classes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/classAvg">Average for a class</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Jesus Israel Guzman Armenta
+      </span>
+  </nav>
+  <div class="container-fluid" style="padding-top: 1%;">
+    <div class="row0">
+        <div class=col-4>
+            <h2>Your request was completed succesfully</h2> 
+            <br>
+            <div class="alert alert-primary" role="alert" id="reply">
+                {{.}}
+            </div>
+        </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/static/js/index.js"></script>
+</body>
+</html>

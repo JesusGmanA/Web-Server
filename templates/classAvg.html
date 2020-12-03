@@ -1,0 +1,23 @@
+{{define "title"}}Create a new class{{end}}
+{{define "body"}}
+<div class="row" id="form-request">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <form method="POST" id="class-score">
+            <label for="class-name">Class Name: </label>
+            <input type="text" id="class-name" name="class-name" class="form-control" placeholder="Concurrentes y distribuidos">
+            <br>
+            <button id="send-request" type="submit" value="Submit" class="btn btn-primary" onclick="return disableMainView('#class-score')">Submit</button>
+        </form>
+    </div>
+</div>
+<div class="row" style="display:none;" id="message-view">
+    <div class=col-4>
+        <h2>Your request was completed succesfully</h2> 
+        <br>
+        <div class="alert alert-primary" role="alert" id="reply">
+            
+        </div>
+    </div>
+</div>
+{{end}}

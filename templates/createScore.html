@@ -1,0 +1,29 @@
+{{define "title"}}Create a new class{{end}}
+{{define "body"}}
+<div class="row" id="form-request">
+    <div class="col-3"></div>
+    <div class="col-6">
+    <form method="POST" id="create-form">
+        <label for="class-name">Class Name: </label>
+        <input type="text" id="class-name" name="class-name" class="form-control" placeholder="Concurrentes y distribuidos" required>
+        <br>
+        <label for="student-name">Student Name: </label>
+        <input type="text" id="student-name" name="student-name" class="form-control" placeholder="Jesus Guzman" required>
+        <br>
+        <label for="grade">Grade: </label>
+        <input type="number" id="grade" name="grade" class="form-control" placeholder="95" required>
+        <br>
+        <button id="createScore" type="submit" value="Submit" class="btn btn-primary" onclick="return disableMainView('#create-form')">Submit</button>
+    </form>
+    </div>
+</div>
+<div class="row" style="display:none;" id="message-view">
+    <div class=col-4>
+        <h2>Your request was completed succesfully</h2> 
+        <br>
+        <div class="alert alert-primary" role="alert" id="reply">
+            
+        </div>
+    </div>
+</div>
+{{end}}
